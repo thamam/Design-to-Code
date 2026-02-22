@@ -1,0 +1,5 @@
+{
+  "name": "Design-to-Code",
+  "description": "A dual-pane application that converts natural language design descriptions into code using Gemini AI.",
+  "requestFramePermissions": []
+}
