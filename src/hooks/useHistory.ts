@@ -1,7 +1,7 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback } from 'react';
 
 export function useHistory<T>(initialState: T | (() => T)) {
-  const [history, setHistory] = useState<T[]>([
+  const [history, setHistory] = useState<T[]>(() => [
     typeof initialState === 'function' ? (initialState as () => T)() : initialState
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);

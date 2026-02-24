@@ -6,7 +6,7 @@ import { useDebouncedCallback } from 'use-debounce';
 
 export function useAppStore() {
   const {
-    state,
+    state = DEFAULT_STATE,
     setState,
     undo,
     redo,

@@ -4,6 +4,7 @@ import { DesignPane } from './components/DesignPane';
 import { CodePane } from './components/CodePane';
 import { SplitPane } from './components/SplitPane';
 import { ConfirmationModal } from './components/ConfirmationModal';
+import { Chatbot } from './components/Chatbot';
 import { useAppStore } from './hooks/useAppStore';
 import { useAutoTrigger } from './hooks/useAutoTrigger';
 
@@ -71,6 +72,8 @@ export default function App() {
           }
         />
       </div>
+
+      <Chatbot />
 
       {isResetModalOpen && (
         <ConfirmationModal
